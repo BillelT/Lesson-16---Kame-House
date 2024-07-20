@@ -1,16 +1,9 @@
 # Three.js Journey
 
-## Setup
-Download [Node.js](https://nodejs.org/en/download/).
-Run this followed commands:
+This project is inspired by lesson 16, "Haunted House," of the Three.js Journey by Bruno Simon.
 
-``` bash
-# Install dependencies (only the first time)
-npm install
+It's my first low-poly 3D scene. I created the scene in Blender.
 
-# Run the local server at localhost:8080
-npm run dev
+I challenged myself to complete this first WebGL experience with only 30 hours of effective work.
 
-# Build for production in the dist/ directory
-npm run build
-```
+Feel free to give me some tips. I hope you enjoy it!
