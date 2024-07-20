@@ -7,6 +7,7 @@ import Camera from "./Camera.js";
 import Renderer from "./Renderer.js";
 import World from "./World/World.js";
 import Resources from "./Utils/Resources.js";
+import Raycaster from "./Utils/Raycaster.js";
 
 import sources from "./sources.js";
 
@@ -35,6 +36,7 @@ export default class Experience {
     this.camera = new Camera();
     this.renderer = new Renderer();
     this.world = new World();
+    this.raycaster = new Raycaster();
 
     // Sizes resize event
     this.sizes.on("resize", () => {
@@ -56,6 +58,7 @@ export default class Experience {
     this.camera.update();
     this.world.update();
     this.renderer.update();
+    this.raycaster.update();
   }
 
   destroy() {

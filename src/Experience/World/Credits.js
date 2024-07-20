@@ -2,6 +2,7 @@ import * as THREE from "three";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 import Experience from "../Experience.js";
+import gsap from "gsap";
 
 export default class Credits {
   constructor() {
@@ -33,7 +34,7 @@ export default class Credits {
   setText() {
     const chars = new THREE.Group();
     const text = "©BT";
-    const objectToIntersect = [];
+    this.objectToIntersect = [];
 
     const fontLoader = new FontLoader();
 
@@ -80,7 +81,7 @@ export default class Credits {
 
         lXPos += lWidth + 0.3;
 
-        objectToIntersect.push(lMesh);
+        this.objectToIntersect.push(lMesh);
         chars.add(lMesh);
       });
 
@@ -103,5 +104,17 @@ export default class Credits {
         .add(debugObject.goToPortfolio, "start")
         .name("Visit my portfolio");
     }
+  }
+
+  rotateText(object) {
+    gsap.to(object.rotation, {
+      duration: 2,
+      delay: 0,
+      y: Math.PI * 2,
+      ease: "power1.inOut",
+      onComplete: () => {
+        object.rotation.y -= Math.PI * 2;
+      },
+    });
   }
 }

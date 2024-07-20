@@ -2,16 +2,16 @@ import Experience from "./Experience/Experience.js";
 
 const experience = new Experience(document.querySelector("canvas.webgl"));
 
-// import * as THREE from "three";
-// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-// import { Timer } from "three/addons/misc/Timer.js";
-// import { Sky } from "three/addons/objects/Sky.js";
-// import GUI from "lil-gui";
-// import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-// import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
-// import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
-// import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
-// import gsap from "gsap";
+import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { Timer } from "three/addons/misc/Timer.js";
+import { Sky } from "three/addons/objects/Sky.js";
+import GUI from "lil-gui";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
+import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
+import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
+import gsap from "gsap";
 
 // /**
 //  * Base
